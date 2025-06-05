@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Skills - Portfolio Bhergonia')
+@section('title', 'Skills - Harsh Patil Portfolio')
 
 @section('content')
 <div class="container py-5" style="margin-top: 80px;">
@@ -31,50 +31,41 @@
                             <div class="skill-item p-3 bg-light rounded-3 text-center">
                                 <div class="skill-icon mb-2">
                                     @switch($skill)
+                                        @case('HTML')
+                                            <i class="fab fa-html5 fa-2x text-danger"></i>
+                                            @break
+                                        @case('CSS')
+                                            <i class="fab fa-css3-alt fa-2x text-primary"></i>
+                                            @break
+                                        @case('Java')
+                                            <i class="fab fa-java fa-2x text-danger"></i>
+                                            @break
                                         @case('PHP')
                                             <i class="fab fa-php fa-2x text-primary"></i>
-                                            @break
-                                        @case('JavaScript')
-                                            <i class="fab fa-js-square fa-2x text-warning"></i>
-                                            @break
-                                        @case('Python')
-                                            <i class="fab fa-python fa-2x text-info"></i>
                                             @break
                                         @case('Laravel')
                                             <i class="fab fa-laravel fa-2x text-danger"></i>
                                             @break
-                                        @case('Vue.js')
-                                            <i class="fab fa-vuejs fa-2x text-success"></i>
-                                            @break
-                                        @case('React')
-                                            <i class="fab fa-react fa-2x text-info"></i>
-                                            @break
-                                        @case('Node.js')
-                                            <i class="fab fa-node-js fa-2x text-success"></i>
-                                            @break
-                                        @case('HTML5')
-                                            <i class="fab fa-html5 fa-2x text-danger"></i>
-                                            @break
-                                        @case('CSS3')
-                                            <i class="fab fa-css3-alt fa-2x text-primary"></i>
-                                            @break
-                                        @case('Bootstrap')
-                                            <i class="fab fa-bootstrap fa-2x text-primary"></i>
-                                            @break
                                         @case('Git')
                                             <i class="fab fa-git-alt fa-2x text-danger"></i>
                                             @break
-                                        @case('Docker')
-                                            <i class="fab fa-docker fa-2x text-info"></i>
+                                        @case('MySQL')
+                                            <i class="fas fa-database fa-2x text-info"></i>
                                             @break
-                                        @case('Linux')
-                                            <i class="fab fa-linux fa-2x text-dark"></i>
+                                        @case('Visual Studio Code')
+                                            <i class="fas fa-code fa-2x text-info"></i>
                                             @break
-                                        @case('AWS')
-                                            <i class="fab fa-aws fa-2x text-warning"></i>
+                                        @case('Web Development')
+                                            <i class="fas fa-globe fa-2x text-primary"></i>
+                                            @break
+                                        @case('Database Management')
+                                            <i class="fas fa-server fa-2x text-warning"></i>
+                                            @break
+                                        @case('API Development')
+                                            <i class="fas fa-plug fa-2x text-success"></i>
                                             @break
                                         @default
-                                            <i class="fas fa-star fa-2x text-warning"></i>
+                                            <i class="fas fa-code fa-2x text-primary"></i>
                                     @endswitch
                                 </div>
                                 <h6 class="mb-0">{{ $skill }}</h6>
@@ -118,16 +109,6 @@
                             <div class="mb-3">
                                 <div class="d-flex justify-content-between mb-1">
                                     <span>PHP & Laravel</span>
-                                    <span>95%</span>
-                                </div>
-                                <div class="progress mb-3" style="height: 8px;">
-                                    <div class="progress-bar bg-warning" style="width: 95%"></div>
-                                </div>
-                            </div>
-                            
-                            <div class="mb-3">
-                                <div class="d-flex justify-content-between mb-1">
-                                    <span>JavaScript & Vue.js</span>
                                     <span>90%</span>
                                 </div>
                                 <div class="progress mb-3" style="height: 8px;">
@@ -137,7 +118,17 @@
                             
                             <div class="mb-3">
                                 <div class="d-flex justify-content-between mb-1">
-                                    <span>Database Design</span>
+                                    <span>HTML & CSS</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="progress mb-3" style="height: 8px;">
+                                    <div class="progress-bar bg-warning" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span>Java</span>
                                     <span>85%</span>
                                 </div>
                                 <div class="progress mb-3" style="height: 8px;">
@@ -147,11 +138,11 @@
                             
                             <div class="mb-3">
                                 <div class="d-flex justify-content-between mb-1">
-                                    <span>API Development</span>
-                                    <span>88%</span>
+                                    <span>Database Management</span>
+                                    <span>75%</span>
                                 </div>
                                 <div class="progress" style="height: 8px;">
-                                    <div class="progress-bar bg-warning" style="width: 88%"></div>
+                                    <div class="progress-bar bg-warning" style="width: 75%"></div>
                                 </div>
                             </div>
                         </div>

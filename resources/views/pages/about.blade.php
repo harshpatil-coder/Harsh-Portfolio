@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'About Me - Bhea Bergonia Portfolio')
+@section('title', 'About Me - Harsh Patil Portfolio')
 
 @section('content')
 <div class="container py-5" style="margin-top: 80px;">
@@ -8,7 +8,7 @@
         <div class="col-lg-8 mx-auto">
             <div class="text-center mb-5">
                 <h1 class="display-4 mb-3">About Me</h1>
-                <p class="lead text-muted">Getting to know Bhea Bergonia</p>
+                <p class="lead text-muted">Getting to know Harsh Patil</p>
             </div>
         </div>
     </div>
@@ -16,24 +16,23 @@
     <div class="row mb-5">
         <div class="col-lg-4 mb-4">
             <div class="text-center">
-                <img src="{{ asset('images/about-profile.jpg') }}" alt="Bhea Bergonia" class="img-fluid rounded-circle shadow" style="max-width: 250px;">
+                <img src="{{ asset('images/about-profile.jpg') }}" alt="Harsh Patil" class="img-fluid rounded-circle shadow" style="max-width: 250px;">
             </div>
         </div>
         <div class="col-lg-8">
             <h2 class="mb-4">Personal Background</h2>
             <p class="mb-4">
-                Hello! I'm {{ $personalInfo['name'] }}, a passionate Information Technology student with a love for creativity and design. 
-                My journey in tech started during my college years, and I've been continuously learning and exploring 
-                the fascinating world of technology and digital design.
+                Hello! I'm {{ $personalInfo['name'] }}, a passionate Website Developer with a Bachelor's degree in Computer Applications (BCA) from Silver Oak University. 
+                My journey in tech has been focused on mastering programming languages like JAVA, PHP, and exploring emerging IOT technologies.
             </p>
             <p class="mb-4">
-                I believe in combining technical knowledge with creative thinking to solve problems and create meaningful 
-                digital experiences. Whether it's designing graphics, learning new programming concepts, or working on 
-                projects, I approach everything with enthusiasm and attention to detail.
+                I specialize in Website Development using PHP Laravel Framework, creating visually appealing and functional web applications. 
+                Whether it's building responsive websites, implementing complex backend logic, or working on innovative projects, 
+                I approach everything with enthusiasm and attention to detail.
             </p>
             <p class="mb-4">
-                My background in cookery has taught me valuable skills like precision, time management, and creativity 
-                that I now apply to my technology studies and design work.
+                My comprehensive education in computer applications has equipped me with strong technical foundations and practical skills 
+                that I now apply to create modern, efficient web solutions.
             </p>
             
             <div class="row">
@@ -89,7 +88,30 @@
                 @foreach($hobbies as $hobby)
                 <div class="col-md-4 col-sm-6 mb-3">
                     <div class="hobby-item p-3 bg-light rounded-3 text-center h-100">
-                        <i class="fas fa-star text-warning mb-2"></i>
+                        <div class="skill-icon mb-2">
+                            @switch($hobby)
+                                @case('Web Development')
+                                    <i class="fas fa-globe fa-2x text-primary"></i>
+                                    @break
+                                @case('Learning New Technologies')
+                                    <i class="fas fa-laptop-code fa-2x text-success"></i>
+                                    @break
+                                @case('PHP Laravel Development')
+                                    <i class="fab fa-laravel fa-2x text-danger"></i>
+                                    @break
+                                @case('Software Architecture')
+                                    <i class="fas fa-layer-group fa-2x text-info"></i>
+                                    @break
+                                @case('Technical Problem Solving')
+                                    <i class="fas fa-puzzle-piece fa-2x text-warning"></i>
+                                    @break
+                                @case('IoT Projects')
+                                    <i class="fas fa-microchip fa-2x text-primary"></i>
+                                    @break
+                                @default
+                                    <i class="fas fa-code fa-2x text-primary"></i>
+                            @endswitch
+                        </div>
                         <h6 class="mb-0">{{ $hobby }}</h6>
                     </div>
                 </div>
@@ -105,7 +127,7 @@
                     <h3 class="mb-3">Let's Connect!</h3>
                     <p class="mb-4">
                         I'm always excited to meet new people, learn from others, and collaborate on interesting projects. 
-                        Whether you're a fellow student, professional, or just someone who shares similar interests, 
+                        Whether you're a fellow developer, professional, or just someone who shares similar interests, 
                         I'd love to connect!
                     </p>
                     <div class="d-flex justify-content-center gap-3">

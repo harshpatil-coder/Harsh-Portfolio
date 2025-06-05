@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Contact - Portfolio Bhergonia')
+@section('title', 'Contact - Harsh Patil Portfolio')
 
 @section('content')
 <div class="container py-5" style="margin-top: 80px;">
@@ -99,7 +99,7 @@
                             </div>
                             <div>
                                 <h6 class="mb-0">Email</h6>
-                                <a href="mailto:bheabergonia1@gmail.com" class="text-muted">bheabergonia1@gmail.com</a>
+                                <a href="mailto:bheabergonia1@gmail.com" class="text-muted">Patilharsh1589@gmail.com</a>
                             </div>
                         </div>
                     </div>
@@ -111,7 +111,7 @@
                             </div>
                             <div>
                                 <h6 class="mb-0">Contact Number</h6>
-                                <a href="tel:09817290331" class="text-muted">(0981) 729 0331</a>
+                                <a href="tel:9537305400" class="text-muted">+91 9537305400</a>
                             </div>
                         </div>
                     </div>
@@ -123,7 +123,7 @@
                             </div>
                             <div>
                                 <h6 class="mb-0">Location</h6>
-                                <span class="text-muted">Luna, Bolinao, Pangasinan</span>
+                                <span class="text-muted">Ahmedabad, Gujarat, India</span>
                             </div>
                         </div>
                     </div>
@@ -144,14 +144,11 @@
                     
                     <h6 class="mb-3">Connect With Me</h6>
                     <div class="social-links">
-                        <a href="https://github.com/bhergonia" target="_blank" class="btn btn-outline-dark btn-sm me-2 mb-2">
+                        <a href="https://github.com/harshpatil-coder" target="_blank" class="btn btn-outline-dark btn-sm me-2 mb-2">
                             <i class="fab fa-github me-1"></i>GitHub
                         </a>
-                        <a href="https://linkedin.com/in/bhergonia" target="_blank" class="btn btn-outline-primary btn-sm me-2 mb-2">
+                        <a href="https://www.linkedin.com/in/harsh-patil-980560231" target="_blank" class="btn btn-outline-primary btn-sm me-2 mb-2">
                             <i class="fab fa-linkedin me-1"></i>LinkedIn
-                        </a>
-                        <a href="https://twitter.com/bhergonia" target="_blank" class="btn btn-outline-info btn-sm me-2 mb-2">
-                            <i class="fab fa-twitter me-1"></i>Twitter
                         </a>
                     </div>
                 </div>

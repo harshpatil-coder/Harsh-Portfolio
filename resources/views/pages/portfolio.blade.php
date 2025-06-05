@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Portfolio - Bhergonia')
+@section('title', 'Portfolio - Harsh Patil')
 
 @section('content')
 <div class="container py-5" style="margin-top: 80px;">
@@ -88,7 +88,7 @@
                         Check back regularly to see my latest work, or follow me on GitHub for real-time updates.
                     </p>
                     <div class="d-flex justify-content-center gap-3">
-                        <a href="https://github.com/bhergonia" target="_blank" class="btn btn-dark">
+                        <a href="https://github.com/harshpatil-coder" target="_blank" class="btn btn-dark">
                             <i class="fab fa-github me-2"></i>Follow on GitHub
                         </a>
                         <a href="{{ route('contact') }}" class="btn btn-primary">

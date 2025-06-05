@@ -18,36 +18,36 @@ class SiteController extends Controller
     public function about()
     {
         $personalInfo = [
-            'name' => 'Bhea Bergonia',
-            'address' => 'Luna, Bolinao, Pangasinan',
-            'birthday' => 'December 16, 2003',
-            'age' => 21
+            'name' => 'Harsh Patil',
+            'address' => 'Ahmedabad, Gujarat, India',
+            'birthday' => 'April 10, 2003',
+            'age' => 22
         ];
 
         $education = [
             [
                 'level' => 'Secondary Education',
-                'degree' => 'Cookery Strand',
-                'school' => 'Luna National High School',
+                'degree' => 'High School',
+                'school' => 'Muktijivan English Medium High School',
                 'year' => '2020-2022',
-                'description' => 'Gained hands-on experience in food preparation and kitchen management under the Cookery strand.'
+                'description' => 'Completed secondary education with focus on science and mathematics, laying strong foundation for computer applications.'
             ],
             [
                 'level' => 'College Education',
-                'degree' => 'Bachelor of Science in Information Technology (BSIT)',
-                'school' => 'Pangasinan State University – Alaminos Campus',
-                'year' => '2022-Present (3rd Year)',
-                'description' => 'Currently pursuing my degree in Information Technology, continuously learning and developing skills in the IT field.'
+                'degree' => 'Bachelor of Computer Applications (BCA)',
+                'school' => 'Silver Oak University',
+                'year' => '2022-2025',
+                'description' => 'Successfully completed BCA with expertise in web development, PHP Laravel Framework, Java programming, and IoT technologies. Specialized in creating modern web applications and exploring emerging technologies.'
             ]
         ];
 
         $hobbies = [
-            'Designing and Creative Work',
+            'Web Development',
             'Learning New Technologies',
-            'Food Preparation and Cooking',
-            'Digital Art and Graphics',
-            'Reading',
-            'Problem Solving'
+            'PHP Laravel Development',
+            'Software Architecture',
+            'Technical Problem Solving',
+            'IoT Projects'
         ];
 
         return view('pages.about', compact('personalInfo', 'education', 'hobbies'));
@@ -57,10 +57,9 @@ class SiteController extends Controller
     public function skills()
     {
         $technicalSkills = [
-            'Office Applications' => ['Microsoft Word', 'Microsoft Excel', 'Microsoft PowerPoint'],
-            'Design Tools' => ['Canva', 'Basic Graphic Design Tools', 'Digital Art Tools'],
-            'Programming & Web' => ['HTML/CSS (Learning)', 'Basic Web Development', 'IT Fundamentals'],
-            'Other Technical' => ['Computer Hardware Basics', 'File Management', 'Internet Research']
+            'Programming Languages' => ['HTML', 'CSS', 'Java', 'PHP', 'Laravel'],
+            'Development Tools' => ['Visual Studio Code', 'Git', 'MySQL'],
+            'Other Technical' => ['Web Development', 'Database Management', 'API Development']
         ];
 
         $softSkills = [
@@ -68,10 +67,10 @@ class SiteController extends Controller
             'Teamwork and Collaboration',
             'Communication Skills',
             'Time Management',
-            'Adaptability',
             'Problem-Solving',
             'Attention to Detail',
-            'Learning Enthusiasm'
+            'Adaptability',
+            'Learning New Technologies'
         ];
 
         return view('pages.skills', compact('technicalSkills', 'softSkills'));
@@ -85,7 +84,7 @@ class SiteController extends Controller
                 'id' => 1,
                 'title' => 'Digital Menu Design Project',
                 'description' => 'Created a comprehensive digital menu design for a local restaurant using Canva. The project involved designing visually appealing menu layouts with food photography, proper typography, and brand-consistent color schemes.',
-                'technologies' => ['Canva', 'Graphic Design', 'Typography', 'Color Theory'],
+                'technologies' => ['Canva', 'Typography', 'Color Theory'],
                 'image' => 'images/projects/menu-design.svg',
                 'github' => '#',
                 'demo' => '#',
@@ -99,10 +98,10 @@ class SiteController extends Controller
             ],
             [
                 'id' => 2,
-                'title' => 'Student Information System (Concept)',
-                'description' => 'Conceptual design for a student information management system as part of my BSIT coursework. This project demonstrates understanding of database design, user interface planning, and system workflow.',
-                'technologies' => ['System Analysis', 'Database Design', 'UI/UX Planning', 'Documentation'],
-                'image' => 'images/projects/student-system.svg',
+                'title' => 'School Management System Using Laravel',
+                'description' => 'Conceptual design for a school management system as part of my Silver Oak University. This project demonstrates understanding of database design, user interface planning, and system workflow.',
+                'technologies' => ['System Analysis', 'Database Design', 'Laravel PHP', 'Documentation'],
+                'image' => 'images/projects/student-system.png',
                 'github' => '#',
                 'demo' => '#',
                 'features' => [
