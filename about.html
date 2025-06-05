@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Harsh Patil Portfolio</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/app.css">
+    
+    <style>
+        .hobby-item {
+            transition: all 0.3s ease;
+        }
+        
+        .hobby-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .timeline .card {
+            transition: all 0.3s ease;
+        }
+        
+        .timeline .card:hover {
+            transform: translateX(10px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-code me-2"></i>Bhea Bergonia
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="fas fa-home me-1"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">
+                            <i class="fas fa-user me-1"></i>About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skills.html">
+                            <i class="fas fa-cogs me-1"></i>Skills
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">
+                            <i class="fas fa-briefcase me-1"></i>Portfolio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            <i class="fas fa-envelope me-1"></i>Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container py-5" style="margin-top: 80px;">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="text-center mb-5">
+                        <h1 class="display-4 mb-3">About Me</h1>
+                        <p class="lead text-muted">Getting to know Bhea Bergonia</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mb-5">
+                <div class="col-lg-4 mb-4">
+                    <div class="text-center">
+                        <img src="images/about-profile.jpg" alt="Bhea Bergonia" class="img-fluid rounded-circle shadow" style="max-width: 250px;">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <h2 class="mb-4">Personal Background</h2>
+                    <p class="mb-4">
+                        Hello! I'm Bhea Bergonia, a passionate Information Technology student with a love for creativity and design. 
+                        My journey in tech started during my college years, and I've been continuously learning and exploring 
+                        the fascinating world of technology and digital design.
+                    </p>
+                    <p class="mb-4">
+                        I believe in combining technical knowledge with creative thinking to solve problems and create meaningful 
+                        digital experiences. Whether it's designing graphics, learning new programming concepts, or working on 
+                        projects, I approach everything with enthusiasm and attention to detail.
+                    </p>
+                    <p class="mb-4">
+                        My background in cookery has taught me valuable skills like precision, time management, and creativity 
+                        that I now apply to my technology studies and design work.
+                    </p>
+                    
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <h5><i class="fas fa-user text-primary me-2"></i>Full Name</h5>
+                            <p class="text-muted">Bhea Bergonia</p>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <h5><i class="fas fa-map-marker-alt text-primary me-2"></i>Address</h5>
+                            <p class="text-muted">Luna, Bolinao, Pangasinan</p>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <h5><i class="fas fa-birthday-cake text-primary me-2"></i>Birthday</h5>
+                            <p class="text-muted">December 16, 2003</p>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <h5><i class="fas fa-calendar text-primary me-2"></i>Age</h5>
+                            <p class="text-muted">21 years old</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h2 class="mb-4"><i class="fas fa-graduation-cap text-primary me-3"></i>Education</h2>
+                    <div class="timeline">
+                        <div class="card mb-3 shadow-sm">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <span class="badge bg-info mb-2">Secondary Education</span>
+                                        <h5 class="card-title text-primary">Cookery Strand</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">Luna National High School</h6>
+                                        <p class="card-text">Gained hands-on experience in food preparation and kitchen management under the Cookery strand.</p>
+                                    </div>
+                                    <div class="col-md-4 text-md-end">
+                                        <span class="badge bg-primary fs-6">2020-2022</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3 shadow-sm">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <span class="badge bg-info mb-2">College Education</span>
+                                        <h5 class="card-title text-primary">Bachelor of Science in Information Technology (BSIT)</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">Pangasinan State University – Alaminos Campus</h6>
+                                        <p class="card-text">Currently pursuing my degree in Information Technology, continuously learning and developing skills in the IT field.</p>
+                                    </div>
+                                    <div class="col-md-4 text-md-end">
+                                        <span class="badge bg-primary fs-6">2022-Present (3rd Year)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h2 class="mb-4"><i class="fas fa-heart text-primary me-3"></i>Hobbies & Interests</h2>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 mb-3">
+                            <div class="hobby-item p-3 bg-light rounded-3 text-center h-100">
+                                <i class="fas fa-star text-warning mb-2"></i>
+                                <h6 class="mb-0">Designing and Creative Work</h6>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-3">
+                            <div class="hobby-item p-3 bg-light rounded-3 text-center h-100">
+                                <i class="fas fa-star text-warning mb-2"></i>
+                                <h6 class="mb-0">Learning New Technologies</h6>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-3">
+                            <div class="hobby-item p-3 bg-light rounded-3 text-center h-100">
+                                <i class="fas fa-star text-warning mb-2"></i>
+                                <h6 class="mb-0">Food Preparation and Cooking</h6>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-3">
+                            <div class="hobby-item p-3 bg-light rounded-3 text-center h-100">
+                                <i class="fas fa-star text-warning mb-2"></i>
+                                <h6 class="mb-0">Digital Art and Graphics</h6>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-3">
+                            <div class="hobby-item p-3 bg-light rounded-3 text-center h-100">
+                                <i class="fas fa-star text-warning mb-2"></i>
+                                <h6 class="mb-0">Reading</h6>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-3">
+                            <div class="hobby-item p-3 bg-light rounded-3 text-center h-100">
+                                <i class="fas fa-star text-warning mb-2"></i>
+                                <h6 class="mb-0">Problem Solving</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-12">
+                    <div class="card bg-primary text-white">
+                        <div class="card-body text-center">
+                            <h3 class="mb-3">Let's Connect!</h3>
+                            <p class="mb-4">
+                                I'm always excited to meet new people, learn from others, and collaborate on interesting projects. 
+                                Whether you're a fellow student, professional, or just someone who shares similar interests, 
+                                I'd love to connect!
+                            </p>
+                            <div class="d-flex justify-content-center gap-3">
+                                <a href="contact.html" class="btn btn-warning btn-lg">
+                                    <i class="fas fa-envelope me-2"></i>Get In Touch
+                                </a>
+                                <a href="portfolio.html" class="btn btn-outline-light btn-lg">
+                                    <i class="fas fa-briefcase me-2"></i>View My Work
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Bhea Bergonia</h5>
+                    <p class="mb-0">BSIT Student passionate about technology and creative design.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-links">
+                        <a href="#" class="text-light me-3"><i class="fab fa-github fa-lg"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="mailto:bheabergonia1@gmail.com" class="text-light"><i class="fas fa-envelope fa-lg"></i></a>
+                    </div>
+                    <p class="mt-2 mb-0">&copy; 2025 Bhea Bergonia. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - Harsh Patil Portfolio</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/app.css">
+    
+    <style>
+        .skill-item {
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        
+        .skill-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            border-color: #0d6efd;
+        }
+        
+        .soft-skill-card {
+            transition: all 0.3s ease;
+        }
+        
+        .soft-skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15) !important;
+        }
+        
+        .bg-gradient-primary {
+            background: linear-gradient(135deg, #0d6efd 0%, #6610f2 100%);
+        }
+        
+        .card-header {
+            border-bottom: none;
+        }
+        
+        .progress {
+            background-color: rgba(255,255,255,0.2);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-code me-2"></i>Bhea Bergonia
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="fas fa-home me-1"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">
+                            <i class="fas fa-user me-1"></i>About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="skills.html">
+                            <i class="fas fa-cogs me-1"></i>Skills
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">
+                            <i class="fas fa-briefcase me-1"></i>Portfolio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            <i class="fas fa-envelope me-1"></i>Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container py-5" style="margin-top: 80px;">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="text-center mb-5">
+                        <h1 class="display-4 mb-3">My Skills</h1>
+                        <p class="lead text-muted">The tools and technologies I use to bring ideas to life</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h2 class="mb-4"><i class="fas fa-code text-primary me-3"></i>Technical Skills</h2>
+                    
+                    <!-- Office Applications -->
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0">
+                                <i class="fas fa-cog me-2"></i>Office Applications
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-6 mb-3">
+                                    <div class="skill-item p-3 bg-light rounded-3 text-center">
+                                        <div class="skill-icon mb-2">
+                                            <i class="fas fa-file-word fa-2x text-primary"></i>
+                                        </div>
+                                        <h6 class="mb-0">Microsoft Word</h6>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 mb-3">
+                                    <div class="skill-item p-3 bg-light rounded-3 text-center">
+                                        <div class="skill-icon mb-2">
+                                            <i class="fas fa-file-excel fa-2x text-success"></i>
+                                        </div>
+                                        <h6 class="mb-0">Microsoft Excel</h6>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 mb-3">
+                                    <div class="skill-item p-3 bg-light rounded-3 text-center">
+                                        <div class="skill-icon mb-2">
+                                            <i class="fas fa-file-powerpoint fa-2x text-danger"></i>
+                                        </div>
+                                        <h6 class="mb-0">Microsoft PowerPoint</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Design Tools -->
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0">
+                                <i class="fas fa-cog me-2"></i>Design Tools
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-6 mb-3">
+                                    <div class="skill-item p-3 bg-light rounded-3 text-center">
+                                        <div class="skill-icon mb-2">
+                                            <i class="fas fa-palette fa-2x text-info"></i>
+                                        </div>
+                                        <h6 class="mb-0">Canva</h6>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 mb-3">
+                                    <div class="skill-item p-3 bg-light rounded-3 text-center">
+                                        <div class="skill-icon mb-2">
+                                            <i class="fas fa-paint-brush fa-2x text-warning"></i>
+                                        </div>
+                                        <h6 class="mb-0">Basic Graphic Design Tools</h6>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 mb-3">
+                                    <div class="skill-item p-3 bg-light rounded-3 text-center">
+                                        <div class="skill-icon mb-2">
+                                            <i class="fas fa-digital-tachograph fa-2x text-success"></i>
+                                        </div>
+                                        <h6 class="mb-0">Digital Art Tools</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Programming & Web -->
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0">
+                                <i class="fas fa-cog me-2"></i>Programming & Web
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-6 mb-3">
+                                    <div class="skill-item p-3 bg-light rounded-3 text-center">
+                                        <div class="skill-icon mb-2">
+                                            <i class="fab fa-html5 fa-2x text-danger"></i>
+                                        </div>
+                                        <h6 class="mb-0">HTML/CSS (Learning)</h6>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 mb-3">
+                                    <div class="skill-item p-3 bg-light rounded-3 text-center">
+                                        <div class="skill-icon mb-2">
+                                            <i class="fas fa-code fa-2x text-primary"></i>
+                                        </div>
+                                        <h6 class="mb-0">Basic Web Development</h6>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 mb-3">
+                                    <div class="skill-item p-3 bg-light rounded-3 text-center">
+                                        <div class="skill-icon mb-2">
+                                            <i class="fas fa-laptop-code fa-2x text-info"></i>
+                                        </div>
+                                        <h6 class="mb-0">IT Fundamentals</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Other Technical -->
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0">
+                                <i class="fas fa-cog me-2"></i>Other Technical
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-6 mb-3">
+                                    <div class="skill-item p-3 bg-light rounded-3 text-center">
+                                        <div class="skill-icon mb-2">
+                                            <i class="fas fa-microchip fa-2x text-secondary"></i>
+                                        </div>
+                                        <h6 class="mb-0">Computer Hardware Basics</h6>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 mb-3">
+                                    <div class="skill-item p-3 bg-light rounded-3 text-center">
+                                        <div class="skill-icon mb-2">
+                                            <i class="fas fa-folder-open fa-2x text-warning"></i>
+                                        </div>
+                                        <h6 class="mb-0">File Management</h6>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 mb-3">
+                                    <div class="skill-item p-3 bg-light rounded-3 text-center">
+                                        <div class="skill-icon mb-2">
+                                            <i class="fas fa-search fa-2x text-success"></i>
+                                        </div>
+                                        <h6 class="mb-0">Internet Research</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h2 class="mb-4"><i class="fas fa-users text-primary me-3"></i>Soft Skills</h2>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 mb-4">
+                            <div class="soft-skill-card card h-100 border-0 shadow-sm">
+                                <div class="card-body text-center">
+                                    <div class="skill-number bg-primary text-white rounded-circle mx-auto mb-3" style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; font-weight: bold;">
+                                        1
+                                    </div>
+                                    <h6 class="card-title">Creative Thinking</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-4">
+                            <div class="soft-skill-card card h-100 border-0 shadow-sm">
+                                <div class="card-body text-center">
+                                    <div class="skill-number bg-primary text-white rounded-circle mx-auto mb-3" style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; font-weight: bold;">
+                                        2
+                                    </div>
+                                    <h6 class="card-title">Teamwork and Collaboration</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-4">
+                            <div class="soft-skill-card card h-100 border-0 shadow-sm">
+                                <div class="card-body text-center">
+                                    <div class="skill-number bg-primary text-white rounded-circle mx-auto mb-3" style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; font-weight: bold;">
+                                        3
+                                    </div>
+                                    <h6 class="card-title">Communication Skills</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-4">
+                            <div class="soft-skill-card card h-100 border-0 shadow-sm">
+                                <div class="card-body text-center">
+                                    <div class="skill-number bg-primary text-white rounded-circle mx-auto mb-3" style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; font-weight: bold;">
+                                        4
+                                    </div>
+                                    <h6 class="card-title">Time Management</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-4">
+                            <div class="soft-skill-card card h-100 border-0 shadow-sm">
+                                <div class="card-body text-center">
+                                    <div class="skill-number bg-primary text-white rounded-circle mx-auto mb-3" style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; font-weight: bold;">
+                                        5
+                                    </div>
+                                    <h6 class="card-title">Adaptability</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-4">
+                            <div class="soft-skill-card card h-100 border-0 shadow-sm">
+                                <div class="card-body text-center">
+                                    <div class="skill-number bg-primary text-white rounded-circle mx-auto mb-3" style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; font-weight: bold;">
+                                        6
+                                    </div>
+                                    <h6 class="card-title">Problem-Solving</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-4">
+                            <div class="soft-skill-card card h-100 border-0 shadow-sm">
+                                <div class="card-body text-center">
+                                    <div class="skill-number bg-primary text-white rounded-circle mx-auto mb-3" style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; font-weight: bold;">
+                                        7
+                                    </div>
+                                    <h6 class="card-title">Attention to Detail</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-4">
+                            <div class="soft-skill-card card h-100 border-0 shadow-sm">
+                                <div class="card-body text-center">
+                                    <div class="skill-number bg-primary text-white rounded-circle mx-auto mb-3" style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; font-weight: bold;">
+                                        8
+                                    </div>
+                                    <h6 class="card-title">Learning Enthusiasm</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-12">
+                    <div class="card bg-gradient-primary text-white">
+                        <div class="card-body">
+                            <div class="row align-items-center">
+                                <div class="col-md-8">
+                                    <h3 class="mb-3">Skill Proficiency Levels</h3>
+                                    <div class="mb-3">
+                                        <div class="d-flex justify-content-between mb-1">
+                                            <span>Microsoft Office Suite</span>
+                                            <span>85%</span>
+                                        </div>
+                                        <div class="progress mb-3" style="height: 8px;">
+                                            <div class="progress-bar bg-warning" style="width: 85%"></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mb-3">
+                                        <div class="d-flex justify-content-between mb-1">
+                                            <span>Canva & Design Tools</span>
+                                            <span>80%</span>
+                                        </div>
+                                        <div class="progress mb-3" style="height: 8px;">
+                                            <div class="progress-bar bg-warning" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mb-3">
+                                        <div class="d-flex justify-content-between mb-1">
+                                            <span>HTML/CSS</span>
+                                            <span>40%</span>
+                                        </div>
+                                        <div class="progress mb-3" style="height: 8px;">
+                                            <div class="progress-bar bg-warning" style="width: 40%"></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mb-3">
+                                        <div class="d-flex justify-content-between mb-1">
+                                            <span>IT Fundamentals</span>
+                                            <span>70%</span>
+                                        </div>
+                                        <div class="progress" style="height: 8px;">
+                                            <div class="progress-bar bg-warning" style="width: 70%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <i class="fas fa-chart-line fa-5x mb-3 opacity-75"></i>
+                                    <p class="mb-0">Continuously learning and improving every day</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <h3 class="mb-4">Ready to work together?</h3>
+                    <p class="text-muted mb-4">Let's discuss how my skills can help bring your project to life.</p>
+                    <a href="contact.html" class="btn btn-primary btn-lg">
+                        <i class="fas fa-envelope me-2"></i>Get In Touch
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Bhea Bergonia</h5>
+                    <p class="mb-0">BSIT Student passionate about technology and creative design.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-links">
+                        <a href="#" class="text-light me-3"><i class="fab fa-github fa-lg"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="mailto:bheabergonia1@gmail.com" class="text-light"><i class="fas fa-envelope fa-lg"></i></a>
+                    </div>
+                    <p class="mt-2 mb-0">&copy; 2025 Bhea Bergonia. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
