@@ -1,4 +1,4 @@
-#!/bin/bash
+﻿#!/bin/bash
 
 # Install PHP dependencies
 composer install --optimize-autoloader --no-dev
