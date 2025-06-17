@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "outputDirectory": "html-version",
+  "builds": [
+    {
+      "src": "html-version/**/*",
+      "use": "@vercel/static"
+    }
+  ]
+}
