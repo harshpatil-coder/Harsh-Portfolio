@@ -11,8 +11,16 @@ class SiteController extends Controller
      */
     public function home()
     {
-        return view('pages.home');
-    }    /**
+        $socialLinks = [
+            'github' => 'https://github.com/harshpatil-coder',
+            'linkedin' => 'https://www.linkedin.com/in/harsh-patil',
+            'email' => 'mailto:patilharsh1589@gmail.com'
+        ];
+        
+        return view('pages.home', compact('socialLinks'));
+    }
+
+    /**
      * Display the about me page.
      */
     public function about()
